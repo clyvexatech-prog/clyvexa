@@ -1,0 +1,33 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="30" cy="30" r="28" fill="url(#iconGradient)" />
+  
+  <!-- AI Brain Icon -->
+  <g transform="translate(15, 15)">
+    <!-- Brain shape -->
+    <path d="M15 5 C22.5 2, 30 5, 30 10 C30 15, 22.5 18, 15 18 C7.5 18, 0 15, 0 10 C0 5, 7.5 2, 15 5 Z" 
+          fill="white" opacity="0.9" />
+    
+    <!-- Neural connections -->
+    <g opacity="0.7">
+      <circle cx="7.5" cy="8" r="1.5" fill="white" />
+      <circle cx="22.5" cy="8" r="1.5" fill="white" />
+      <circle cx="15" cy="13" r="1.5" fill="white" />
+      <circle cx="15" cy="3" r="1.5" fill="white" />
+      
+      <line x1="7.5" y1="8" x2="15" y2="3" stroke="white" strokeWidth="1" />
+      <line x1="22.5" y1="8" x2="15" y2="3" stroke="white" strokeWidth="1" />
+      <line x1="7.5" y1="8" x2="15" y2="13" stroke="white" strokeWidth="1" />
+      <line x1="22.5" y1="8" x2="15" y2="13" stroke="white" strokeWidth="1" />
+      <line x1="15" y1="3" x2="15" y2="13" stroke="white" strokeWidth="1" />
+    </g>
+  </g>
+  
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9333ea;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,65 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="60" rx="8" fill="url(#gradient)" />
+  
+  <!-- Neural Network Pattern -->
+  <g opacity="0.1">
+    <circle cx="30" cy="30" r="3" fill="white" />
+    <circle cx="45" cy="20" r="2" fill="white" />
+    <circle cx="60" cy="35" r="2.5" fill="white" />
+    <circle cx="75" cy="25" r="2" fill="white" />
+    <circle cx="90" cy="40" r="3" fill="white" />
+    <circle cx="105" cy="22" r="2.5" fill="white" />
+    <circle cx="120" cy="38" r="2" fill="white" />
+    <circle cx="135" cy="28" r="3" fill="white" />
+    <circle cx="150" cy="35" r="2" fill="white" />
+    <circle cx="165" cy="25" r="2.5" fill="white" />
+    <circle cx="180" cy="40" r="2" fill="white" />
+    
+    <!-- Connections -->
+    <line x1="30" y1="30" x2="45" y2="20" stroke="white" strokeWidth="1" opacity="0.5" />
+    <line x1="45" y1="20" x2="60" y2="35" stroke="white" strokeWidth="1" opacity="0.5" />
+    <line x1="60" y1="35" x2="75" y2="25" stroke="white" strokeWidth="1" opacity="0.5" />
+    <line x1="75" y1="25" x2="90" y2="40" stroke="white" strokeWidth="1" opacity="0.5" />
+    <line x1="90" y1="40" x2="105" y2="22" stroke="white" strokeWidth="1" opacity="0.5" />
+    <line x1="105" y1="22" x2="120" y2="38" stroke="white" strokeWidth="1" opacity="0.5" />
+    <line x1="120" y1="38" x2="135" y2="28" stroke="white" strokeWidth="1" opacity="0.5" />
+    <line x1="135" y1="28" x2="150" y2="35" stroke="white" strokeWidth="1" opacity="0.5" />
+    <line x1="150" y1="35" x2="165" y2="25" stroke="white" strokeWidth="1" opacity="0.5" />
+    <line x1="165" y1="25" x2="180" y2="40" stroke="white" strokeWidth="1" opacity="0.5" />
+  </g>
+  
+  <!-- AI Brain Icon -->
+  <g transform="translate(20, 15)">
+    <!-- Brain shape -->
+    <path d="M10 5 C15 2, 20 5, 20 10 C20 15, 15 18, 10 18 C5 18, 0 15, 0 10 C0 5, 5 2, 10 5 Z" 
+          fill="white" opacity="0.9" />
+    
+    <!-- Neural connections -->
+    <g opacity="0.7">
+      <circle cx="5" cy="8" r="1" fill="white" />
+      <circle cx="15" cy="8" r="1" fill="white" />
+      <circle cx="10" cy="12" r="1" fill="white" />
+      <circle cx="10" cy="4" r="1" fill="white" />
+      
+      <line x1="5" y1="8" x2="10" y2="4" stroke="white" strokeWidth="0.5" />
+      <line x1="15" y1="8" x2="10" y2="4" stroke="white" strokeWidth="0.5" />
+      <line x1="5" y1="8" x2="10" y2="12" stroke="white" strokeWidth="0.5" />
+      <line x1="15" y1="8" x2="10" y2="12" stroke="white" strokeWidth="0.5" />
+      <line x1="10" y1="4" x2="10" y2="12" stroke="white" strokeWidth="0.5" />
+    </g>
+  </g>
+  
+  <!-- Company Name -->
+  <text x="100" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">
+    AI Solutions
+  </text>
+  
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9333ea;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>

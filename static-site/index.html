@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GLYVEXA - Professional AI &amp; Software Solutions</title>
+  <meta name="description" content="GLYVEXA delivers professional AI and software solutions including web development, AI chatbots, AI agents, voice bots, mobile apps, and cloud solutions.">
+  <meta name="keywords" content="GLYVEXA, AI Solutions, Software Development, Web Development, AI Chatbots, Mobile Apps, Cloud Services, AI Agents, Voice Bots">
+  <meta property="og:title" content="GLYVEXA - Professional AI & Software Solutions">
+  <meta property="og:description" content="Professional AI and software solutions for growing businesses.">
+  <meta property="og:image" content="images/logo.svg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Splash Screen -->
+<div id="splash-screen" class="splash-screen">
+  <div class="splash-corner tl"></div>
+  <div class="splash-corner tr"></div>
+  <div class="splash-corner bl"></div>
+  <div class="splash-corner br"></div>
+  <img src="images/splash-screen-640x1136.svg" alt="GLYVEXA" class="splash-logo">
+  <div class="splash-title">GLYVEXA</div>
+  <div class="splash-subtitle">Innovating the Future</div>
+  <div class="splash-bar"><div class="splash-bar-inner"></div></div>
+  <div class="splash-loading">Loading...</div>
+</div>
+
+<!-- Particles -->
+<canvas id="particles"></canvas>
+
+<!-- Floating Logo -->
+<div class="floating-logo">
+  <img src="images/small-logo.png" alt="">
+</div>
+
+<!-- Background Logo -->
+<img src="images/logo.svg" alt="" class="bg-logo">
+
+<!-- Header -->
+<header class="header">
+  <div class="container header-inner">
+    <a href="index.html" class="header-logo">
+      <img src="images/small-logo.png" alt="GLYVEXA">
+      <span>GLYVEXA</span>
+    </a>
+    <nav class="header-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">&#9790;</button>
+      <button id="mobile-toggle" class="mobile-toggle" aria-label="Menu">&#9776;</button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        <span id="rotating-text" style="transition: opacity 0.35s, transform 0.35s;">Starting Our Journey</span>
+      </div>
+      <h1>Building <span class="gradient">Solutions</span> for Modern Businesses</h1>
+      <p>We're a passionate company helping businesses with modern software solutions. We bring fresh perspectives, dedication, and a commitment to learning and growing with our clients.</p>
+      <div class="hero-buttons">
+        <a href="contact.html" class="btn btn-primary">Get Started Today</a>
+        <a href="services.html" class="btn btn-outline">Our Services</a>
+      </div>
+      <div class="hero-features">
+        <div class="hero-feature"><span class="check">&#10003;</span> Fresh perspectives</div>
+        <div class="hero-feature"><span class="check">&#10003;</span> Dedicated focus</div>
+        <div class="hero-feature"><span class="check">&#10003;</span> Modern approaches</div>
+        <div class="hero-feature"><span class="check">&#10003;</span> Personal attention</div>
+      </div>
+    </div>
+  </div>
+  <img src="images/logo.svg" alt="" class="hero-logo">
+  <div class="hero-glow"></div>
+  <div class="hero-glow-2"></div>
+</section>
+
+<!-- Services Section -->
+<section class="section" style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header animate">
+      <span class="badge">What We Offer</span>
+      <h2>Our Services</h2>
+      <p>We offer AI and software solutions to help your business grow.</p>
+    </div>
+    <div class="services-grid">
+      <div class="card animate animate-delay-1">
+        <div class="card-icon" style="background: linear-gradient(135deg, #3b82f6, #2563eb);">&#127760;</div>
+        <h3>Website Development</h3>
+        <p>Custom, responsive websites built with modern frameworks and best practices for optimal performance.</p>
+        <div class="card-features">
+          <span>React/Next.js</span><span>E-commerce</span><span>PWA</span><span>SEO</span>
+        </div>
+      </div>
+      <div class="card animate animate-delay-2">
+        <div class="card-icon" style="background: linear-gradient(135deg, #a855f7, #7c3aed);">&#129302;</div>
+        <h3>AI Chatbots</h3>
+        <p>Intelligent conversational AI solutions that enhance customer service and automate interactions.</p>
+        <div class="card-features">
+          <span>NLP</span><span>Multi-language</span><span>24/7</span><span>Custom Training</span>
+        </div>
+      </div>
+      <div class="card animate animate-delay-3">
+        <div class="card-icon" style="background: linear-gradient(135deg, #6366f1, #4f46e5);">&#129504;</div>
+        <h3>AI Agents</h3>
+        <p>Autonomous AI agents that perform complex tasks and make intelligent decisions.</p>
+        <div class="card-features">
+          <span>Machine Learning</span><span>Decision Making</span><span>Automation</span><span>Data Analysis</span>
+        </div>
+      </div>
+      <div class="card animate animate-delay-4">
+        <div class="card-icon" style="background: linear-gradient(135deg, #10b981, #059669);">&#127908;</div>
+        <h3>Voice Bots</h3>
+        <p>Voice-enabled AI assistants for customer support and hands-free interactions.</p>
+        <div class="card-features">
+          <span>Speech Recognition</span><span>Natural Voices</span><span>Multi-platform</span><span>Real-time</span>
+        </div>
+      </div>
+      <div class="card animate animate-delay-5">
+        <div class="card-icon" style="background: linear-gradient(135deg, #f97316, #ea580c);">&#128241;</div>
+        <h3>Mobile Applications</h3>
+        <p>Mobile apps for iOS and Android with cross-platform capabilities.</p>
+        <div class="card-features">
+          <span>React Native</span><span>Flutter</span><span>Native</span><span>ASO</span>
+        </div>
+      </div>
+      <div class="card animate animate-delay-6">
+        <div class="card-icon" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">&#9729;</div>
+        <h3>Cloud Solutions</h3>
+        <p>Scalable cloud infrastructure and services for optimal performance.</p>
+        <div class="card-features">
+          <span>AWS</span><span>DevOps</span><span>Auto-scaling</span><span>Security</span>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 2rem;" class="animate">
+      <a href="services.html" class="btn btn-primary">View All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="section">
+  <div class="container">
+    <div class="section-header animate">
+      <span class="badge">Our Metrics</span>
+      <h2>Engineering &amp; Capability Metrics</h2>
+      <p>Demonstrating our expertise through measurable results.</p>
+    </div>
+    <div class="stats-grid">
+      <div class="card stat-card animate animate-delay-1">
+        <div class="stat-number" data-count="15" data-suffix="+">0</div>
+        <div class="stat-label">Projects Developed</div>
+      </div>
+      <div class="card stat-card animate animate-delay-2">
+        <div class="stat-number" data-count="6" data-suffix="">0</div>
+        <div class="stat-label">Core Services Offered</div>
+      </div>
+      <div class="card stat-card animate animate-delay-3">
+        <div class="stat-number" data-count="100" data-suffix="%">0</div>
+        <div class="stat-label">Commitment to Quality</div>
+      </div>
+      <div class="card stat-card animate animate-delay-4">
+        <div class="stat-number" data-count="24" data-suffix="/7">0</div>
+        <div class="stat-label">Support Available</div>
+      </div>
+    </div>
+    <div class="stats-banner animate">
+      <div class="stats-banner-item"><strong>"Growing"</strong><span>Client Partnerships</span></div>
+      <div class="stats-banner-item"><strong>"AI &amp; Cloud"</strong><span>Architecture Focus</span></div>
+      <div class="stats-banner-item"><strong>"100%"</strong><span>Security &amp; Quality</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="section" style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header animate">
+      <span class="badge">Why Us</span>
+      <h2>Why Choose Us</h2>
+      <p>We're learning and growing with technology to help solve business challenges.</p>
+    </div>
+    <div class="reasons-grid">
+      <div class="card animate animate-delay-1">
+        <div class="reason-card">
+          <div class="reason-icon" style="background: linear-gradient(135deg, #3b82f6, #2563eb);">&#9889;</div>
+          <div>
+            <h3>Fresh Perspective</h3>
+            <p>New approach to solving business challenges with modern ideas and enthusiasm.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card animate animate-delay-2">
+        <div class="reason-card">
+          <div class="reason-icon" style="background: linear-gradient(135deg, #10b981, #059669);">&#128274;</div>
+          <div>
+            <h3>Security First</h3>
+            <p>Committed to following security best practices and compliance standards from day one.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card animate animate-delay-3">
+        <div class="reason-card">
+          <div class="reason-icon" style="background: linear-gradient(135deg, #f97316, #ea580c);">&#128640;</div>
+          <div>
+            <h3>Quick Learner</h3>
+            <p>Adaptable and ready to learn new technologies to meet your specific needs.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card animate animate-delay-4">
+        <div class="reason-card">
+          <div class="reason-icon" style="background: linear-gradient(135deg, #a855f7, #7c3aed);">&#128149;</div>
+          <div>
+            <h3>Client-Focused</h3>
+            <p>Dedicated to understanding your business and providing personalized attention.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card animate animate-delay-5">
+        <div class="reason-card">
+          <div class="reason-icon" style="background: linear-gradient(135deg, #ef4444, #dc2626);">&#128222;</div>
+          <div>
+            <h3>Responsive Support</h3>
+            <p>Committed to being available and responsive to your questions and needs.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card animate animate-delay-6">
+        <div class="reason-card">
+          <div class="reason-icon" style="background: linear-gradient(135deg, #6366f1, #4f46e5);">&#128640;</div>
+          <div>
+            <h3>Growing Together</h3>
+            <p>Building solutions that can evolve and scale as your business grows.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="commitment-box animate">
+      <h3>Our Commitment to Learning</h3>
+      <div class="commitment-list">
+        <div class="commitment-item"><span class="dot"></span> Learning Every Day</div>
+        <div class="commitment-item"><span class="dot"></span> Honest Communication</div>
+        <div class="commitment-item"><span class="dot"></span> Learning Focus</div>
+        <div class="commitment-item"><span class="dot"></span> Client Success First</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Website Age Section -->
+<section class="section age-section">
+  <div class="container">
+    <div class="section-header animate">
+      <span class="badge">Our Journey</span>
+      <h2>Starting Our Journey</h2>
+      <p>Every great company starts somewhere. We're building our foundation with dedication and passion.</p>
+    </div>
+    <div class="age-counter-card animate">
+      <h3 style="margin-bottom: 0.5rem;">Live Company Age</h3>
+      <p style="color: var(--text-secondary); font-size: 0.9rem;">Since our launch on February 16, 2026</p>
+      <div class="age-counter-grid">
+        <div class="age-unit">
+          <div class="age-number" id="age-years">00</div>
+          <div class="age-label">Years</div>
+        </div>
+        <div class="age-unit">
+          <div class="age-number" id="age-months">00</div>
+          <div class="age-label">Months</div>
+        </div>
+        <div class="age-unit">
+          <div class="age-number" id="age-days">00</div>
+          <div class="age-label">Days</div>
+        </div>
+        <div class="age-unit">
+          <div class="age-number" id="age-hours">00</div>
+          <div class="age-label">Hours</div>
+        </div>
+        <div class="age-unit">
+          <div class="age-number" id="age-minutes">00</div>
+          <div class="age-label">Minutes</div>
+        </div>
+        <div class="age-unit">
+          <div class="age-number" id="age-seconds">00</div>
+          <div class="age-label">Seconds</div>
+        </div>
+      </div>
+    </div>
+    <div class="age-features">
+      <div class="card animate animate-delay-2">
+        <div class="card-icon" style="background: linear-gradient(135deg, #3b82f6, #2563eb);">&#127752;</div>
+        <h3>Fresh Start</h3>
+        <p>New perspectives and innovative approaches to modern challenges.</p>
+      </div>
+      <div class="card animate animate-delay-3">
+        <div class="card-icon" style="background: linear-gradient(135deg, #a855f7, #7c3aed);">&#127919;</div>
+        <h3>Dedicated Focus</h3>
+        <p>Every client receives our full attention and commitment to success.</p>
+      </div>
+      <div class="card animate animate-delay-4">
+        <div class="card-icon" style="background: linear-gradient(135deg, #10b981, #059669);">&#129309;</div>
+        <h3>Growing Together</h3>
+        <p>Building relationships and learning with every project we undertake.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Industries Section -->
+<section class="section">
+  <div class="container">
+    <div class="section-header animate">
+      <span class="badge">Industries</span>
+      <h2>Industries We Serve</h2>
+      <p>We provide AI and software solutions for different industries.</p>
+    </div>
+    <div class="industries-grid">
+      <div class="card industry-card animate animate-delay-1">
+        <div class="icon-wrap" style="background: linear-gradient(135deg, #3b82f6, #2563eb);">&#128722;</div>
+        <h3>E-commerce &amp; Retail</h3>
+        <p>AI-powered shopping experiences, inventory management, and customer service solutions.</p>
+      </div>
+      <div class="card industry-card animate animate-delay-2">
+        <div class="icon-wrap" style="background: linear-gradient(135deg, #10b981, #059669);">&#129657;</div>
+        <h3>Healthcare</h3>
+        <p>Medical AI diagnostics, patient management systems, and healthcare automation.</p>
+      </div>
+      <div class="card industry-card animate animate-delay-3">
+        <div class="icon-wrap" style="background: linear-gradient(135deg, #a855f7, #7c3aed);">&#127891;</div>
+        <h3>Education</h3>
+        <p>E-learning platforms, AI tutors, and educational content management systems.</p>
+      </div>
+      <div class="card industry-card animate animate-delay-4">
+        <div class="icon-wrap" style="background: linear-gradient(135deg, #f97316, #ea580c);">&#128176;</div>
+        <h3>Finance &amp; Banking</h3>
+        <p>Fraud detection, automated trading, and customer service automation.</p>
+      </div>
+      <div class="card industry-card animate animate-delay-5">
+        <div class="icon-wrap" style="background: linear-gradient(135deg, #ef4444, #dc2626);">&#9881;</div>
+        <h3>Manufacturing</h3>
+        <p>IoT integration, predictive maintenance, and supply chain optimization.</p>
+      </div>
+      <div class="card industry-card animate animate-delay-6">
+        <div class="icon-wrap" style="background: linear-gradient(135deg, #6366f1, #4f46e5);">&#127968;</div>
+        <h3>Real Estate</h3>
+        <p>Property management systems, virtual tours, and AI-powered recommendations.</p>
+      </div>
+      <div class="card industry-card animate animate-delay-5">
+        <div class="icon-wrap" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">&#9992;</div>
+        <h3>Travel &amp; Hospitality</h3>
+        <p>Booking systems, customer service chatbots, and personalized recommendations.</p>
+      </div>
+      <div class="card industry-card animate animate-delay-6">
+        <div class="icon-wrap" style="background: linear-gradient(135deg, #ec4899, #db2777);">&#127918;</div>
+        <h3>Gaming &amp; Entertainment</h3>
+        <p>AI-powered game mechanics, player analytics, and content recommendation systems.</p>
+      </div>
+    </div>
+    <div class="industry-banner animate">
+      <h3>Help Your Industry with Technology</h3>
+      <p>Whether you're in healthcare, finance, retail, or any other industry, we're ready to learn and work with you.</p>
+      <a href="contact.html" class="btn btn-white">Schedule a Consultation</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section cta-section">
+  <div class="container">
+    <div class="cta-grid">
+      <div class="cta-info animate">
+        <h2>Ready to Start Your Project?</h2>
+        <p>Let's discuss how we can help with your software needs.</p>
+        <div class="cta-contact-item">
+          <div class="cta-contact-icon">&#128222;</div>
+          <div class="cta-contact-text">
+            <strong>Phone</strong>
+            <span><a href="tel:+917683886320">+91 7683 886 320</a></span>
+          </div>
+        </div>
+        <div class="cta-contact-item">
+          <div class="cta-contact-icon">&#9993;</div>
+          <div class="cta-contact-text">
+            <strong>Email</strong>
+            <span><a href="mailto:clyvexa.tech@gmail.com">clyvexa.tech@gmail.com</a></span>
+          </div>
+        </div>
+        <div class="cta-contact-item">
+          <div class="cta-contact-icon">&#128196;</div>
+          <div class="cta-contact-text">
+            <strong>Share Your Idea</strong>
+            <span><a href="https://docs.google.com/forms/d/e/1FAIpQLSfRLV1StnhsYEWASYlw9BlosTV95c-tl0pqxHNhIfua_YRS5w/viewform?usp=publish-editor" target="_blank" rel="noopener">Submit Requirements</a></span>
+          </div>
+        </div>
+        <ul class="cta-features" style="margin-top: 1.5rem;">
+          <li><span class="check">&#10003;</span> Free consultation and project assessment</li>
+          <li><span class="check">&#10003;</span> Solutions made for your needs</li>
+          <li><span class="check">&#10003;</span> Transparent pricing with no hidden costs</li>
+          <li><span class="check">&#10003;</span> Post-launch support and maintenance</li>
+          <li><span class="check">&#10003;</span> Dedicated commitment to your success</li>
+        </ul>
+      </div>
+      <div class="animate animate-delay-2" style="display: flex; align-items: center; justify-content: center;">
+        <div style="text-align: center;">
+          <img src="images/small-logo.png" alt="GLYVEXA" style="width: 8rem; margin: 0 auto 1.5rem;">
+          <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">Let's Talk</h3>
+          <p style="opacity: 0.8; margin-bottom: 1.5rem;">We're excited to work with our first clients and build lasting partnerships.</p>
+          <a href="contact.html" class="btn btn-white">Contact Us Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-cta animate">
+      <h3>Start Your Project Today</h3>
+      <p>We're excited to work with our first clients and build lasting partnerships through our AI and software solutions.</p>
+      <div class="bottom-cta-buttons">
+        <a href="contact.html" class="btn btn-white">Schedule Free Consultation</a>
+        <a href="services.html" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: #fff;">View Our Work</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/small-logo.png" alt="GLYVEXA">
+        <p>Professional AI and software solutions for growing businesses. We help transform your ideas into reality.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/debadattaa-jena-a13a72300" target="_blank" rel="noopener" title="LinkedIn">&#128279; LinkedIn</a>
+          <a href="https://github.com/Debadatta-jena" target="_blank" rel="noopener" title="GitHub">&#128187; GitHub</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="services.html">Web Development</a>
+        <a href="services.html">AI Solutions</a>
+        <a href="services.html">Mobile Apps</a>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="contact.html">Contact Us</a>
+        <div class="footer-contact">
+          <div class="footer-contact-item">&#128205; Bhubaneswar, Odisha, India</div>
+          <div class="footer-contact-item">&#128222; <a href="tel:+917683886320">+91 7683 886 320</a></div>
+          <div class="footer-contact-item">&#9993; <a href="mailto:clyvexa.tech@gmail.com">clyvexa.tech@gmail.com</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 GLYVEXA. All rights reserved.</span>
+      <span>
+        <a href="privacy.html" style="margin-right: 1rem;">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/age-counter.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!-- Splash Screen for Small Devices - Replace with actual 640x1136 PNG -->
+<svg width="640" height="1136" viewBox="0 0 640 1136" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <radialGradient id="splashGradientSmall" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="640" height="1136" fill="url(#splashGradientSmall)" />
+  
+  <!-- Simplified Neural Network Pattern -->
+  <g opacity="0.1">
+    <line x1="100" y1="200" x2="200" y2="150" stroke="white" strokeWidth="1" opacity="0.3">
+      <animate attributeName="y1" from="200" to="250" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="y2" from="150" to="200" dur="2s" repeatCount="indefinite" />
+    </line>
+    <line x1="200" y1="250" x2="300" y2="200" stroke="white" strokeWidth="1" opacity="0.3">
+      <animate attributeName="x2" from="300" to="400" dur="2s" repeatCount="indefinite" />
+    </line>
+    <line x1="300" y1="200" x2="400" y2="250" stroke="white" strokeWidth="1" opacity="0.3">
+      <animate attributeName="x1" from="300" to="400" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="x2" from="400" to="500" dur="2s" repeatCount="indefinite" />
+    </line>
+    <line x1="400" y1="250" x2="500" y2="200" stroke="white" strokeWidth="1" opacity="0.3">
+      <animate attributeName="x1" from="400" to="500" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="x2" from="500" to="600" dur="2s" repeatCount="indefinite" />
+    </line>
+    
+    <!-- Neural nodes -->
+    <circle cx="100" cy="200" r="3" fill="white" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="200" cy="200" r="3" fill="white" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="2s" begin="0.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="300" cy="250" r="3" fill="white" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="2s" begin="1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="400" cy="250" r="3" fill="white" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="2s" begin="1.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="500" cy="200" r="3" fill="white" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="2s" begin="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="600" cy="250" r="3" fill="white" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="2s" begin="2.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- Central Logo Area -->
+  <g transform="translate(320, 400)">
+    <!-- Logo Background Circle -->
+    <circle cx="0" cy="0" r="60" fill="white" opacity="0.1" />
+    
+    <!-- AI Brain Icon -->
+    <g transform="scale(1.5)">
+      <!-- Brain shape -->
+      <path d="M0 0 C15 -5, 30 0, 30 15 C30 22.5, 22.5 30, 0 15 C0 7.5, -7.5 0, 0 15 C0 0, 7.5 0, 0 0 Z" 
+            fill="white" opacity="0.9">
+        <animate attributeName="opacity" values="0;0.9;1" dur="1s" begin="0.5s" fill="freeze" />
+      </path>
+      
+      <!-- Neural connections -->
+      <g opacity="0.7">
+        <circle cx="-7.5" cy="-7.5" r="2" fill="white" />
+        <circle cx="7.5" cy="-7.5" r="2" fill="white" />
+        <circle cx="0" cy="7.5" r="2" fill="white" />
+        <circle cx="0" cy="-22.5" r="2" fill="white" />
+        <circle cx="0" cy="22.5" r="2" fill="white" />
+        
+        <line x1="-7.5" y1="-7.5" x2="0" y2="-22.5" stroke="white" strokeWidth="1.5" />
+        <line x1="7.5" y1="-7.5" x2="0" y2="-22.5" stroke="white" strokeWidth="1.5" />
+        <line x1="-7.5" y1="-7.5" x2="0" y2="7.5" stroke="white" strokeWidth="1.5" />
+        <line x1="7.5" y1="-7.5" x2="0" y2="7.5" stroke="white" strokeWidth="1.5" />
+        <line x1="0" y1="-22.5" x2="0" y2="7.5" stroke="white" strokeWidth="1.5" />
+        <line x1="0" y1="-7.5" x2="0" y2="22.5" stroke="white" strokeWidth="1.5" />
+      </g>
+      
+      <!-- Center detail -->
+      <circle cx="0" cy="0" r="5" fill="white" opacity="0.9" />
+    </g>
+  </g>
+  
+  <!-- Company Name -->
+  <text x="320" y="550" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">
+    AI Solutions
+    <animate attributeName="opacity" values="0;1" dur="1s" begin="0.5s" fill="freeze" />
+  </text>
+  
+  <!-- Tagline -->
+  <text x="320" y="590" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" opacity="0.8">
+    Transforming Ideas into Reality
+    <animate attributeName="opacity" values="0;0.8" dur="1s" begin="1s" fill="freeze" />
+  </text>
+</svg>
