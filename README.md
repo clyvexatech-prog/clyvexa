@@ -1,6 +1,6 @@
-# GLYVEXA — Professional AI & Software Solutions
+# CLYVEXA — Professional AI & Software Solutions
 
-A professional static website for GLYVEXA, an AI and software solutions company.
+A professional static website for CLYVEXA, an AI and software solutions company.
 
 ## Pages
 

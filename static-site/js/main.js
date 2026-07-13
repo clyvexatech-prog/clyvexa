@@ -1,14 +1,14 @@
-/* ===== GLYVEXA — Advanced UI JS ===== */
+/* ===== CLYVEXA — Advanced UI JS ===== */
 
 /* --- Splash Screen --- */
 (function() {
   var splash = document.getElementById('splash-screen');
   if (!splash) return;
-  var shown = sessionStorage.getItem('glyvexa-splash');
+  var shown = sessionStorage.getItem('clyvexa-splash');
   if (shown) { splash.style.display = 'none'; return; }
   setTimeout(function() {
     splash.classList.add('hide');
-    sessionStorage.setItem('glyvexa-splash', '1');
+    sessionStorage.setItem('clyvexa-splash', '1');
     setTimeout(function() { splash.style.display = 'none'; }, 1000);
   }, 5000);
 })();
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
   /* --- Theme Toggle --- */
   var themeBtn = document.getElementById('theme-toggle');
   var html = document.documentElement;
-  var stored = localStorage.getItem('glyvexa-theme');
+  var stored = localStorage.getItem('clyvexa-theme');
   if (stored) html.setAttribute('data-theme', stored);
   else if (window.matchMedia('(prefers-color-scheme: dark)').matches) html.setAttribute('data-theme', 'dark');
 
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var current = html.getAttribute('data-theme');
       var next = current === 'dark' ? 'light' : 'dark';
       html.setAttribute('data-theme', next);
-      localStorage.setItem('glyvexa-theme', next);
+      localStorage.setItem('clyvexa-theme', next);
       updateThemeIcon();
     });
   }

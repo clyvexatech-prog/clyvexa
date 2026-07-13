@@ -1,4 +1,4 @@
-/* ===== GLYVEXA — Website Age Counter ===== */
+/* ===== CLYVEXA — Website Age Counter ===== */
 (function() {
   const LAUNCH_DATE = new Date('2026-02-16T00:00:00Z');
 
