@@ -85,8 +85,8 @@
   </g>
   
   <!-- Company Name -->
-  <text x="320" y="550" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">
-    AI Solutions
+  <text x="320" y="550" font-family="'Inter', Arial, sans-serif" font-size="34" font-weight="900" letter-spacing="3" fill="white" text-anchor="middle">
+    CLYVEXA
     <animate attributeName="opacity" values="0;1" dur="1s" begin="0.5s" fill="freeze" />
   </text>
   

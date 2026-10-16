@@ -22,10 +22,20 @@ A professional static website for CLYVEXA, an AI and software solutions company.
 - **Mobile Responsive** — works on all screen sizes
 - **No backend required** — pure static HTML/CSS/JS
 
+## Leadership
+
+- **Founder, CEO & Proprietor:** Er. Debadattaa Jena (Er.Debadatta Jena / Debadatta Jena)
+- **LinkedIn:** [Er. Debadattaa Jena](https://www.linkedin.com/in/er-debadattaa-jena-a13a72300)
+- **GitHub:** [Debadatta-jena](https://github.com/Debadatta-jena)
+
+## Live Deployment
+
+- **Website URL:** [https://clyvexa-ten.vercel.app](https://clyvexa-ten.vercel.app)
+
 ## Contact
 
 - **Phone:** +91 7683 886 320
-- **Email:** clyvexa.tech@gamil.com
+- **Email:** clyvexa.tech@gmail.com
 - **Location:** Bhubaneswar, Odisha, India
 
 ## How to Use
