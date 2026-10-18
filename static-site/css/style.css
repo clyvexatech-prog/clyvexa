@@ -608,7 +608,7 @@ ul { list-style: none; }
 .footer-logo span { font-size: 1.2rem; font-weight: 800; letter-spacing: 0.04em; background: linear-gradient(135deg, var(--primary-400), var(--neon-cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 .footer-brand img { height: 2.25rem; width: auto; margin-bottom: 1rem; }
 .footer-brand p { font-size: 0.85rem; line-height: 1.7; opacity: 0.7; margin-bottom: 1.25rem; }
-.footer-social { display: flex; gap: 1.5rem; }
+.footer-social { display: flex; gap: 0.65rem; flex-wrap: wrap; }
 .footer-social a {
   width: 2.25rem; height: 2.25rem; border-radius: 0.5rem;
   background: rgba(255,255,255,0.06); display: flex;
