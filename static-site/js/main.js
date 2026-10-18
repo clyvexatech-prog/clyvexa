@@ -293,16 +293,33 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  /* --- Active Nav --- */
-  var currentFile = window.location.pathname.split('/').filter(Boolean).pop() || 'index.html';
-  if (currentFile.indexOf('.html') === -1 && currentFile !== 'index.html') {
-    currentFile += '.html';
+  /* --- Local file:// link fallback --- */
+  if (window.location.protocol === 'file:') {
+    document.querySelectorAll('a[href]').forEach(function(a) {
+      var href = a.getAttribute('href');
+      if (href && !href.startsWith('http') && !href.startsWith('#') && !href.startsWith('mailto:') && !href.startsWith('tel:') && !href.startsWith('javascript:')) {
+        if (href === '/' || href === '') {
+          a.setAttribute('href', 'index.html');
+        } else if (href.startsWith('/')) {
+          a.setAttribute('href', href.substring(1) + '.html');
+        }
+      }
+    });
   }
+
+  /* --- Active Nav --- */
+  var rawPath = window.location.pathname.replace(/\/$/, '').split('/').filter(Boolean).pop() || '';
+  var currentRoute = rawPath.replace(/\.html$/, '');
+  if (currentRoute === 'index' || currentRoute === '') currentRoute = 'home';
+
   document.querySelectorAll('.header-nav a, .mobile-menu a').forEach(function(a) {
     var href = a.getAttribute('href');
-    if (!href) return;
-    var targetFile = href.split('/').filter(Boolean).pop().split('#')[0].split('?')[0];
-    if (targetFile === currentFile || (currentFile === 'index.html' && (targetFile === 'index.html' || targetFile === ''))) {
+    if (!href || href.startsWith('http') || href.startsWith('tel:') || href.startsWith('mailto:')) return;
+    var target = href.replace(/\/$/, '').split('/').filter(Boolean).pop() || '';
+    target = target.replace(/\.html$/, '');
+    if (target === 'index' || target === '' || href === '/') target = 'home';
+
+    if (target === currentRoute) {
       a.classList.add('active');
     } else {
       a.classList.remove('active');
