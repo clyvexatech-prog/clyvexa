@@ -1,27 +1,9 @@
 {
   "version": 2,
-  "cleanUrls": false,
+  "cleanUrls": true,
   "trailingSlash": false,
-  "redirects": [
-    { "source": "/index.html", "destination": "/", "permanent": true },
-    { "source": "/index", "destination": "/", "permanent": true },
-    { "source": "/about.html", "destination": "/about", "permanent": true },
-    { "source": "/services.html", "destination": "/services", "permanent": true },
-    { "source": "/contact.html", "destination": "/contact", "permanent": true },
-    { "source": "/privacy.html", "destination": "/privacy", "permanent": true },
-    { "source": "/terms.html", "destination": "/terms", "permanent": true },
-    { "source": "/:path*.html", "destination": "/:path*", "permanent": true }
-  ],
   "rewrites": [
-    { "source": "/", "destination": "/static-site/index.html" },
-    { "source": "/about", "destination": "/static-site/about.html" },
-    { "source": "/services", "destination": "/static-site/services.html" },
-    { "source": "/contact", "destination": "/static-site/contact.html" },
-    { "source": "/privacy", "destination": "/static-site/privacy.html" },
-    { "source": "/terms", "destination": "/static-site/terms.html" },
-    { "source": "/robots.txt", "destination": "/static-site/robots.txt" },
-    { "source": "/sitemap.xml", "destination": "/static-site/sitemap.xml" },
-    { "source": "/:path*", "destination": "/static-site/:path*" }
+    { "source": "/static-site/:path*", "destination": "/:path*" }
   ],
   "headers": [
     {
