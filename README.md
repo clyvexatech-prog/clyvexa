@@ -12,11 +12,12 @@ A professional static website for CLYVEXA, an AI and software solutions company.
 | Contact | `contact.html` | Phone, email, address, hours, FAQ |
 | Privacy | `privacy.html` | Privacy policy |
 | Terms | `terms.html` | Terms of service |
+| 404 | `404.html` | Branded not-found page (served automatically by Vercel) |
 
 ## Features
 
 - **Website Age Counter** — live clock counting from February 16, 2026
-- **Splash Screen** — animated intro (first visit only)
+- **Splash Screen** — animated intro (first visit only, click or press any key to skip)
 - **Dark/Light Mode** — toggle with persistence
 - **Scroll Animations** — Intersection Observer based
 - **Mobile Responsive** — works on all screen sizes
@@ -40,21 +41,25 @@ A professional static website for CLYVEXA, an AI and software solutions company.
 
 ## How to Use
 
-Open `static-site/index.html` in any browser. No server needed.
+Open `index.html` in any browser. No server needed.
+(Navigation links use clean URLs like `/services` — these resolve correctly when deployed to Vercel; when opened via `file://`, a JS fallback rewrites them to `.html` paths automatically.)
 
 ## File Structure
 
 ```
-static-site/
+/
 ├── index.html
 ├── about.html
 ├── services.html
 ├── contact.html
 ├── privacy.html
 ├── terms.html
+├── 404.html
 ├── css/style.css
 ├── js/age-counter.js
 ├── js/main.js
 ├── images/
-└── favicon.svg
+├── robots.txt
+├── sitemap.xml
+└── vercel.json
 ```

@@ -1,6 +1,7 @@
 /* ===== CLYVEXA — Website Age Counter ===== */
 (function() {
-  const LAUNCH_DATE = new Date('2026-02-16T00:00:00Z');
+  // Local midnight on launch day — keeps UTC/local getters consistent
+  const LAUNCH_DATE = new Date(2026, 1, 16, 0, 0, 0);
 
   function calculateAge(now) {
     if (now < LAUNCH_DATE) {

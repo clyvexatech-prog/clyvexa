@@ -4,19 +4,28 @@
 (function() {
   var splash = document.getElementById('splash-screen');
   if (!splash) return;
-  var shown = sessionStorage.getItem('clyvexa-splash');
-  if (shown) { splash.style.display = 'none'; return; }
+  // "First visit only" — persisted across sessions via localStorage
+  var shown = localStorage.getItem('clyvexa-splash');
+  if (shown) { splash.remove(); return; }
+
+  // Make the splash keyboard-dismissible for accessibility
+  splash.setAttribute('role', 'button');
+  splash.setAttribute('tabindex', '0');
+  splash.setAttribute('aria-label', 'Skip intro');
 
   function dismissSplash() {
     if (splash.classList.contains('hide')) return;
     splash.classList.add('hide');
-    sessionStorage.setItem('clyvexa-splash', '1');
-    setTimeout(function() { splash.style.display = 'none'; }, 600);
+    localStorage.setItem('clyvexa-splash', '1');
+    setTimeout(function() { splash.remove(); }, 600);
   }
 
-  // Dismiss on click or after 2s
+  // Dismiss on click, Enter/Space/Escape key, or after 2s
   splash.style.cursor = 'pointer';
   splash.addEventListener('click', dismissSplash);
+  splash.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ' || e.key === 'Escape') dismissSplash();
+  });
   setTimeout(dismissSplash, 2000);
 })();
 
