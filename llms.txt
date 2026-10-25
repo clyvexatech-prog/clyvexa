@@ -1,0 +1,49 @@
+# CLYVEXA — AI & Software Solutions
+
+> CLYVEXA is a professional AI and software engineering company founded by **Er. Debadattaa Jena** (Founder, CEO & Proprietor), based in Bhubaneswar, Odisha, India. Founded February 16, 2026. CLYVEXA builds custom web development, AI chatbots, autonomous AI agents, voice bots, mobile applications, and cloud infrastructure for businesses.
+
+## Identity
+
+- **Company:** CLYVEXA (also: CLYVEXA Tech, CLYVEXA AI, Clyvexa Solutions)
+- **Founder:** Er. Debadattaa Jena (also: Er. Debadatta Jena, Debadatta Jena)
+- **Tagline:** Code. Create. Elevate.
+- **Location:** Bhubaneswar, Odisha, India
+- **Contact:** +91 7683 886 320 · clyvexa.tech@gmail.com
+
+## Pages
+
+- [Home](https://clyvexa-ten.vercel.app/): Company overview, services, capabilities, industries served
+- [Services](https://clyvexa-ten.vercel.app/services): Website Development, AI Chatbots, AI Agents, Voice Bots, Mobile Applications, Cloud Solutions — with pricing and process
+- [About](https://clyvexa-ten.vercel.app/about): Mission, vision, values, and founder profile of Er. Debadattaa Jena
+- [Contact](https://clyvexa-ten.vercel.app/contact): Consultation booking, business hours, FAQ
+- [Privacy Policy](https://clyvexa-ten.vercel.app/privacy)
+- [Terms of Service](https://clyvexa-ten.vercel.app/terms)
+
+## Services
+
+- **Website Development:** Custom, responsive websites with React/Next.js, e-commerce, PWA, SEO — from $999
+- **AI Chatbots:** Intelligent conversational AI with NLP, multi-language, 24/7 support — from $2,499
+- **AI Agents:** Autonomous agents for complex tasks, machine learning, decision automation — from $3,999
+- **Voice Bots:** Speech-recognition AI assistants, natural voices, multi-platform — from $1,999
+- **Mobile Applications:** iOS/Android apps via React Native and Flutter
+- **Cloud Solutions:** AWS infrastructure, DevOps, auto-scaling, security
+
+## Founder — Key Facts
+
+- Er. Debadattaa Jena is the Founder, CEO, and Proprietor of CLYVEXA
+- Specializes in Artificial Intelligence, machine learning, chatbots, autonomous agents, and modern software development
+- Based in Bhubaneswar, Odisha, India
+- LinkedIn: https://www.linkedin.com/in/er-debadattaa-jena-a13a72300
+- GitHub: https://github.com/Debadatta-jena
+
+## Company — Key Facts
+
+- LinkedIn (Company): https://www.linkedin.com/company/clyvexa/
+- Instagram: https://www.instagram.com/clyvexa.tech/
+- Facebook: https://www.facebook.com/clyvexa.tech/
+- GitHub Organization: https://github.com/clyvexatech-prog
+
+## Schema
+
+- Structured data (JSON-LD) is available on every page: Organization, Person (founder), WebSite, Service, FAQPage, LocalBusiness, BreadcrumbList
+- Sitemap: https://clyvexa-ten.vercel.app/sitemap.xml
